@@ -33,9 +33,9 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single --host 0.0.0.0",
-    "start:dev": "sirv public --single --dev",
-    "ch5-runDev": "node ch5-run --host XXX.XXX.XXX.XXX --dev --user xxx --pass xxx",
-    "ch5-build": "node ch5-run --host XXX.XXX.XXX.XXX --user xxx --pass xxx",
+    "start:dev": "sirv public --single --dev --port 8282",
+    "ch5-runDev": "node ch5-run --host 10.0.0.108 --dev --user admin --pass crestron",
+    "ch5-build": "node ch5-run --host 10.1.20.127 --user admin --pass crestron",
     "ch5-dev": "run-p start:dev ch5-runDev"
   }
 }
